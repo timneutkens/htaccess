@@ -106,7 +106,7 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 Useful if you have a proxy in front of your server performing TLS termination.
 ``` apacheconf
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteRule (.*) https://www.geevers.eu%{REQUEST_URI} [R=301,L]
+RewriteRule (.*) https://www.example.com%{REQUEST_URI} [R=301,L]
 ```
 
 ### Force Trailing Slash
